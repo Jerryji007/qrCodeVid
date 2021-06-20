@@ -3,7 +3,7 @@ import argparse
 import os
 
 def split_video(start_time, end_time, file_path, dest_name):
-    if file_path.endswith(".mp4"):
+    if file_path.endswith(".mp4") or file_path.endswith(".avi") :
         with VideoFileClip(file_path) as video:
             clipped = video.subclip(start_time, end_time)
             clipped.write_videofile(dest_name+".mp4", audio=False, bitrate='5000000')
