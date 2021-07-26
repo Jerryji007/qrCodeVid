@@ -1,4 +1,5 @@
 # qrCodeVid
+### A small and quick tool for video data collection.
 This is a simple script that given a video path, split the video into parts where based on the time that pre-defined START/STOP arucodes show up in the video.
 The script has a bit Fault Tolerence (quickly change to STOP after a wrong START signal) and have SAVECKPT option to save the last trimming points and RESUME option to resume the trimming process from a frame of the video.  
 
